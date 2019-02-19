@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 401199,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "hooks.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Pos manager login",
+        "description": "",
+        "id": "login-functionality;pos-manager-login",
+        "after": [
+          {
+            "result": {
+              "duration": 7675,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user on the data base page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "user selects the data base",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user logs in using \"in_pos_manager@info.com\" and \"KjKtfgrs30\"",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "login functionality",
+    "description": "",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
