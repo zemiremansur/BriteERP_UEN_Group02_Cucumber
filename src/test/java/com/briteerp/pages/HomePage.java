@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+
 public class HomePage {
     public HomePage() {
         PageFactory.initElements(Driver.getDriver(),
@@ -13,35 +14,41 @@ public class HomePage {
     }
 
 
-     public @FindBy(xpath = "//div[@class='oe_secondary_menu_section active']//span[@class='oe_menu_text'][contains(text(),'Dashboard')]")
-    WebElement dashBoardElement;
+    @FindBy(xpath = "//div[@class='oe_secondary_menu_section active']//span[@class='oe_menu_text'][contains(text(),'Dashboard')]")
+    public WebElement dashBoardElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[8]")
-    WebElement ordersOrdersElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[8]")
+    public WebElement ordersOrdersElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[9]")
-    WebElement ordersSessionsElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[9]")
+    public WebElement ordersSessionsElement;
 
-     public @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div[6]/ul[2]/li[1]/a/span")
-    WebElement catalogProductsElement;
+    @FindBy(xpath = "/html/body/div[1]/div[1]/div[1]/div[6]/ul[2]/li[1]/a/span")
+    public WebElement catalogProductsElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[11]")
-    WebElement catalogPriceListElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[11]")
+    public WebElement catalogPriceListElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[12]")
-    WebElement reportingOrdersElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[12]")
+    public WebElement reportingOrdersElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[13]")
-    WebElement reportingSalesDetailsElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[13]")
+    public WebElement reportingSalesDetailsElement;
 
-     public @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[14]")
-    WebElement configPosElement;
+    @FindBy(xpath = "(//a[@class='oe_menu_leaf'])[14]")
+    public WebElement configPosElement;
 
-     public @FindBy(xpath = "//span[contains(text(),'PoS Categories')]")
-    WebElement POSCategoriesElement;
+    @FindBy(xpath = "//span[contains(text(),'PoS Categories')]")
+    public WebElement POSCategoriesElement;
 
-     public String currentTitle = "Point of Sale - Odoo";
+    @FindBy(xpath = "//a[@href='/web#menu_id=484&action=']")
+    public WebElement pointOfSaleElement;
 
+
+    @FindBy(xpath = "//div[@class='o_mail_chat_sidebar']")
+    public WebElement sideBarElement;
+
+    public String currentTitle = "Point of Sale - Odoo";
 
 
 }
