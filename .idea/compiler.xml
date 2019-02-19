@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="BriteERP_UEN_Group02_Cucumber" />
         <module name="BriteERP_UEN_Group2_F2" />
       </profile>
     </annotationProcessing>

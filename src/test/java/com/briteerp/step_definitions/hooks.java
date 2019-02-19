@@ -1,5 +1,6 @@
 package com.briteerp.step_definitions;
 
+import com.briteerp.utilities.ConfigurationReader;
 import com.briteerp.utilities.Driver;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -16,6 +17,10 @@ public class hooks {
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         // you can also add maximize screen here
         Driver.getDriver().manage().window().maximize();
+
+
+
+
     }
 
     @After
