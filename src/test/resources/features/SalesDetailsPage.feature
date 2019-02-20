@@ -15,7 +15,7 @@ Feature: sales details page
     Given manager on the sales details page
     When manager select point of sale ZARA
     Then manager edit the name to "ZARAM"
-    And manage select the save and close bottun
+    And manage select the save and close button
     Then page should be display ZARAM
 
   @BRIT-4136 @PointOfSales @UEN
@@ -23,7 +23,7 @@ Feature: sales details page
     Given manager on the sales details page
     When manager select the zara
     Then point of sales zara page should be display
-    And manager edit somthing on the page
+    And manager edit something on the page
     And manager select the save and change button
     Then new changed page should be display
 
